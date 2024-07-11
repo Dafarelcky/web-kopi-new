@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    @apply font-poppins scroll-smooth;
+}
+
+.title {
+    @apply font-bebas_neue;
+}
+
+.text-primary {
+    @apply text-green-600;
+}
+
+.bg-primary {
+    @apply bg-green-600 text-white;
+}
+
+.btn-default {
+    @apply bg-gray-950 hover:bg-gray-950/90 dark:bg-zinc-50 dark:text-gray-950 dark:hover:bg-zinc-50/90
+    text-white px-4 py-2 rounded;
+}
+
+.trix-toolbar[data-trix-button-group="file-tools"] {
+    @apply hidden;
+}
